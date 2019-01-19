@@ -46,6 +46,10 @@ public class Freeroam : MonoBehaviour {
                 Debug.DrawRay(transform.position, direction*dist, Color.red, 0.4f);
                 if (results[0].collider != null) {
                     results[0].collider.GetComponent<Interactable>().receiveControl(this);
+                    // print("found 1");
+                }
+                else{
+                	// print("nothing here");
                 }
             }
         }
