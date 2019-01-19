@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BackStationary
+  m_Name: LeftWalk2
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -22,7 +22,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0
+        value: 1
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -39,9 +39,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 9117fe200a12e4bce99ed41065bbbb26, type: 3}
+      value: {fileID: 21300000, guid: 3d0c25433e4de46dca2966fbdbc8789b, type: 3}
+    - time: 0.5
+      value: {fileID: 21300000, guid: cf144292ee5184877bf1e3f4665c8942, type: 3}
     - time: 1
-      value: {fileID: 21300000, guid: 9117fe200a12e4bce99ed41065bbbb26, type: 3}
+      value: {fileID: 21300000, guid: cf144292ee5184877bf1e3f4665c8942, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -68,8 +70,9 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 9117fe200a12e4bce99ed41065bbbb26, type: 3}
-    - {fileID: 21300000, guid: 9117fe200a12e4bce99ed41065bbbb26, type: 3}
+    - {fileID: 21300000, guid: 3d0c25433e4de46dca2966fbdbc8789b, type: 3}
+    - {fileID: 21300000, guid: cf144292ee5184877bf1e3f4665c8942, type: 3}
+    - {fileID: 21300000, guid: cf144292ee5184877bf1e3f4665c8942, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -96,7 +99,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0
+        value: 1
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
