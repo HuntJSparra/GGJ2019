@@ -127,6 +127,8 @@ GameObject:
   - component: {fileID: 695815691}
   - component: {fileID: 695815697}
   - component: {fileID: 695815696}
+=======
+>>>>>>> JDEAGAN
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -152,6 +154,13 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.12, y: 0.36}
+=======
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.2, y: 0.2}
+>>>>>>> JDEAGAN
     newSize: {x: 0.2, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -159,6 +168,9 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 0.10362962, y: 0.14331144}
+=======
+  m_Size: {x: 0.2, y: 0.2}
+>>>>>>> JDEAGAN
   m_EdgeRadius: 0
 --- !u!50 &695815692
 Rigidbody2D:
@@ -195,6 +207,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canMove: 0
   movementSpeed: 4
+=======
+  movementSpeed: 2
+>>>>>>> JDEAGAN
 --- !u!212 &695815694
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -233,6 +248,9 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 00c123a89da5a48b19bd2f67f8478637, type: 3}
+=======
+  m_Sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+>>>>>>> JDEAGAN
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -288,6 +306,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+=======
+>>>>>>> JDEAGAN
 --- !u!1 &939457153
 GameObject:
   m_ObjectHideFlags: 0

@@ -44,8 +44,15 @@ public class Freeroam : MonoBehaviour {
 
                 col.Raycast(direction, results, dist, interactableMask);
                 Debug.DrawRay(transform.position+(Vector3)col.offset*transform.localScale.y, direction*dist, Color.red, 0.4f);
+=======
+                Debug.DrawRay(transform.position, direction*dist, Color.red, 0.4f);
+>>>>>>> JDEAGAN
                 if (results[0].collider != null) {
                     results[0].collider.GetComponent<Interactable>().receiveControl(this);
+                    // print("found 1");
+                }
+                else{
+                	// print("nothing here");
                 }
             }
         }
