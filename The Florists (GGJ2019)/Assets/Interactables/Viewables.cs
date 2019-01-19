@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TestInteractions : Interactable {
+public class Viewables : Interactable {
 
     override public IEnumerator run(Freeroam p) {
         p.freeze();
-        yield return StartCoroutine(/*display connected image*/);
+        yield return StartCoroutine(display()/*display connected image*/);
         p.unfreeze();
     }
 
-    //Switch display to image
+    IEnumerator display(){
+    	//Switch display to image
+    	yield return new WaitForSeconds(5);
+    }
 }

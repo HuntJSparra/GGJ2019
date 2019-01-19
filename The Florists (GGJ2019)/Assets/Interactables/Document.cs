@@ -3,13 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TestInteractions : Interactable {
+public class Documents : Interactable {
 
     override public IEnumerator run(Freeroam p) {
         p.freeze();
-        yield return StartCoroutine(/*display connected image*/);
+        yield return StartCoroutine(display()/*display connected image*/);
         p.unfreeze();
     }
 
-    //create pop-up with image over background
+    IEnumerator display(){
+    	//create pop-up with image over background
+    	yield return new WaitForSeconds(5);
+    }
+
 }

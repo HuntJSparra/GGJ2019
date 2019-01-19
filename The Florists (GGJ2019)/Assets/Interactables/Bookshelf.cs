@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TestInteractions : Interactable {
+public class Bookshelf : Interactable {
 
     override public IEnumerator run(Freeroam p) {
         p.freeze();
         //check hooks
-        yield return StartCoroutine(/*hook identifier coroutine*/);
+        yield return StartCoroutine(bookshelf()/*hook identifier coroutine*/);
         p.unfreeze();
     }
 
-    //Interact with Bookshelf
+    IEnumerator bookshelf(){
+    	//Interact with Bookshelf
+    	yield return new WaitForSeconds(5);
+    }
 }

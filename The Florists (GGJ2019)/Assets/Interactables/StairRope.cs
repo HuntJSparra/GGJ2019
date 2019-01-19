@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TestInteractions : Interactable {
+public class StairRope : Interactable {
+	bool hasSS;
 
     override public IEnumerator run(Freeroam p) {
         p.freeze();
-        if(/*don't have step stool*/){
+        if(!hasSS){
         	yield return StartCoroutine(showText("This must be how I can go upstairs"));
         	yield return StartCoroutine(showText("But I am too short to reach it"));
         	//step stool hook available

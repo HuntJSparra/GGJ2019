@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TestInteractions : Interactable {
+public class BRDoor : Interactable {
+	bool movedBS;
 
     override public IEnumerator run(Freeroam p) {
         p.freeze();
-        if(/*not moved bookshelf*/){
+        if(!movedBS){
         	yield return StartCoroutine(showText("The handle rattles, but the door remains closed."));
         }
         else{

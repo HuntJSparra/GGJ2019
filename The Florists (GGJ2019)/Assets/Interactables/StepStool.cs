@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TestInteractions : Interactable {
+public class StepStool : Interactable {
+	bool hasNeed;
 
     override public IEnumerator run(Freeroam p) {
         p.freeze();
-        if(/*not found rope*/){
+        if(!hasNeed){
         	yield return StartCoroutine(showText("This doesn't seem to be useful"));
         }
         else{

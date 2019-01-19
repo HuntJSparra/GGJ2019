@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TestInteractions : Interactable {
+public class Jacket : Interactable {
 
     override public IEnumerator run(Freeroam p) {
         p.freeze();

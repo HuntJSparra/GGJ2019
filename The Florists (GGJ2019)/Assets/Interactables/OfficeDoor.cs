@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TestInteractions : Interactable {
+public class OfficeDoor : Interactable {
+	bool closed;
+	bool hasKey;
 
     override public IEnumerator run(Freeroam p) {
         p.freeze();
-        if(/*doesn't have key and not open*/){
+        if(closed & !hasKey){
         	yield return StartCoroutine(showText("The door appears to be locked"));
         }
-        else if(/*has key and isn't open*/){
+        else if(closed & hasKey){
         	//uses key and door opens
         	yield return StartCoroutine(showText("The door became unlocked and swings open"));
         }
