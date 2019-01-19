@@ -170,7 +170,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.1716, y: 0.36}
+    oldSize: {x: 0.12, y: 0.36}
     newSize: {x: 0.2, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -322,8 +322,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 115.41605, y: 28.391846}
-  m_SizeDelta: {x: 800, y: 82.9}
+  m_AnchoredPosition: {x: 112.98, y: 38.78}
+  m_SizeDelta: {x: 745.26, y: 80.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &939457155
 MonoBehaviour:
@@ -338,7 +338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -346,19 +346,22 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: f6de01dcbe2db4129ae04d4030e710a9, type: 3}
     m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 50
-    m_Alignment: 6
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '     This is a test object'
+  m_Text: The Pekingese (also known as the Lion Dog, Peking Lion Dog, Pelchie Dog,
+    or Peke) is an ancient breed of toy dog, originating in China. They are called
+    Lion Dogs due to their resemblance to Chinese guardian lions (the Shih Tzu is
+    also known as a Lion Dog in Chinese).
 --- !u!222 &939457156
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -570,7 +573,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1073264105
 Transform:
   m_ObjectHideFlags: 0
@@ -946,8 +949,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 115.41605, y: 22.911362}
-  m_SizeDelta: {x: 800, y: 63.52}
+  m_AnchoredPosition: {x: 115.41605, y: 37.27}
+  m_SizeDelta: {x: 800, y: 114.34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1833797658
 MonoBehaviour:
@@ -969,8 +972,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: b3c6fd8971f3845c2ad3ed725b45d6d5, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
