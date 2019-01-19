@@ -1,10 +1,4 @@
-﻿/*******************
-* TODO:
-*   Abstract out boxcast position
-*******************/
-
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,6 +6,7 @@ public class Freeroam : MonoBehaviour {
     public bool canMove;
     public float movementSpeed;
 
+    private Vector2 direction;
     private Rigidbody2D rb;
     private Collider2D col;
 
@@ -19,6 +14,8 @@ public class Freeroam : MonoBehaviour {
 
     void Start() {
         canMove = true;
+
+        direction = Vector2.up;
 
         rb = gameObject.GetComponent<Rigidbody2D>();
         col = gameObject.GetComponent<Collider2D>();
@@ -30,13 +27,13 @@ public class Freeroam : MonoBehaviour {
         if (canMove) {
             // Movement
             if (Input.GetAxisRaw("Horizontal") == -1) {
-                transform.eulerAngles = new Vector3(0, 0, 90);
+                direction = Vector2.left;
             } else if (Input.GetAxisRaw("Horizontal") == 1) {
-                transform.eulerAngles = new Vector3(0, 0, 270);
+                direction = Vector2.right;
             } else if (Input.GetAxisRaw("Vertical") == 1) {
-                transform.eulerAngles = new Vector3(0, 0, 0);
+                direction = Vector2.up;
             } else if (Input.GetAxisRaw("Vertical") == -1) {
-                transform.eulerAngles = new Vector3(0, 0, 180);
+                direction = Vector2.down;
             }
 
 
@@ -45,8 +42,8 @@ public class Freeroam : MonoBehaviour {
                 float dist = 0.6f;
                 RaycastHit2D[] results = new RaycastHit2D[1];
 
-                col.Raycast(transform.up, results, dist, interactableMask);
-                Debug.DrawRay(transform.position, transform.up*dist, Color.red, 0.4f);
+                col.Raycast(direction, results, dist, interactableMask);
+                Debug.DrawRay(transform.position, direction*dist, Color.red, 0.4f);
                 if (results[0].collider != null) {
                     results[0].collider.GetComponent<Interactable>().receiveControl(this);
                 }
@@ -55,10 +52,8 @@ public class Freeroam : MonoBehaviour {
     }
 
     void FixedUpdate() {
-        if (canMove && (Input.GetButton("Vertical") || Input.GetButton("Horizontal"))) {
-            rb.velocity = transform.up*movementSpeed;
-        } else {
-            rb.velocity = Vector2.zero;
+        if (canMove) {
+            rb.velocity = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         }
     }
 
