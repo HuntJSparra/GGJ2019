@@ -63,9 +63,11 @@ public class Freeroam : MonoBehaviour {
 
     public void freeze() {
         canMove = false;
+        //freeze timer
     }
 
     public void unfreeze() {
         canMove = true;
+        //unfreeze timer
     }
 }
