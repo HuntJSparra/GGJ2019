@@ -4,15 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Screwdriver : Interactable {
-	bool hasNeed;
 
     override public IEnumerator run(Freeroam p) {
         p.freeze();
-        if(!hasNeed){
+        if(!EventTracker.foundVent){
         	yield return StartCoroutine(showText("This doesn't seem to be useful"));
         }
         else{
-        	//add screwdriver to inventory
+        	EventTracker.hasSD = true;
         	yield return StartCoroutine(showText("You pick up the screwdriver"));
         }
         

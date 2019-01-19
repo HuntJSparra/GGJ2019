@@ -7,8 +7,10 @@ public class GHLever : Interactable {
 
     override public IEnumerator run(Freeroam p) {
         p.freeze();
-        //open GHdoor
+        EventTracker.GHclosed = false;
         yield return StartCoroutine(showText("You hear a door open in the shop"));
         p.unfreeze();
+        yield return new WaitForSeconds(30);
+        EventTracker.GHclosed = true;
     }
 }

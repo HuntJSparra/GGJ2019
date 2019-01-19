@@ -4,16 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class OfficeDoor : Interactable {
-	bool closed;
-	bool hasKey;
 
     override public IEnumerator run(Freeroam p) {
         p.freeze();
-        if(closed & !hasKey){
+        if(EventTracker.Oclosed & !EventTracker.hasKey){
         	yield return StartCoroutine(showText("The door appears to be locked"));
         }
-        else if(closed & hasKey){
-        	//uses key and door opens
+        else if(EventTracker.Oclosed & EventTracker.hasKey){
+        	EventTracker.Oclosed = false;
         	yield return StartCoroutine(showText("The door became unlocked and swings open"));
         }
         else{

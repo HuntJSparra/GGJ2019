@@ -4,15 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class StepStool : Interactable {
-	bool hasNeed;
 
     override public IEnumerator run(Freeroam p) {
         p.freeze();
-        if(!hasNeed){
+        if(!EventTracker.foundRope){
         	yield return StartCoroutine(showText("This doesn't seem to be useful"));
         }
         else{
-        	//add stepstool to inventory
+        	EventTracker.hasSS = true;
         	yield return StartCoroutine(showText("You pick up the step stool"));
         }
         p.unfreeze();

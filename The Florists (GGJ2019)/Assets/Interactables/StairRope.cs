@@ -4,14 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class StairRope : Interactable {
-	bool hasSS;
 
     override public IEnumerator run(Freeroam p) {
         p.freeze();
-        if(!hasSS){
+        if(!EventTracker.hasSS){
         	yield return StartCoroutine(showText("This must be how I can go upstairs"));
         	yield return StartCoroutine(showText("But I am too short to reach it"));
-        	//step stool hook available
+        	EventTracker.foundRope = true;
         }
         else{
         	//place down stepstool

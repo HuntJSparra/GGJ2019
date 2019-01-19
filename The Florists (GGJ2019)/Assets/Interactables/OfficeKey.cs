@@ -7,7 +7,7 @@ public class OfficeKey : Interactable {
 
     override public IEnumerator run(Freeroam p) {
         p.freeze();
-        //add key to inventory
+        EventTracker.hasKey = true;
         yield return StartCoroutine(showText("You picked up the office key"));
         p.unfreeze();
     }

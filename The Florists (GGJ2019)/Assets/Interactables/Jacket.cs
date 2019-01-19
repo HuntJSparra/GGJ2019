@@ -7,7 +7,7 @@ public class Jacket : Interactable {
 
     override public IEnumerator run(Freeroam p) {
         p.freeze();
-        //add jacket to inventory
+        EventTracker.hasJacket = true;
         //switch character sprite to jacket version
         yield return StartCoroutine(showText("You grab your jacket"));
         p.unfreeze();
