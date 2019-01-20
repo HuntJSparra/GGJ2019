@@ -19,21 +19,9 @@ public class EventTracker : MonoBehaviour{
 	public static bool fixedBS;
 	public static bool timesUp;
 
-    void Awake() {
-        hasKey = false;
-        movedBS = false;
-        hasSD = false;
-        hasSS = false;
-        hasDS = false;
-        hasJacket = false;
+    void Start() {
         CRclosed = true;
         Oclosed = true;
         Vclosed = true;
-        foundRope = false;
-        foundVent = false;
-        faucetOn = false;
-        usedDS = false;
-        fixedBS = false;
-        timesUp = false;
     }
 }

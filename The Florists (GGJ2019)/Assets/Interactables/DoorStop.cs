@@ -10,5 +10,6 @@ public class DoorStop : Interactable {
         EventTracker.hasDS = true;
         yield return StartCoroutine(showText("You picked up a door stop"));
         p.unfreeze();
+        Destroy(gameObject);
     }
 }

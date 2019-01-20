@@ -10,5 +10,6 @@ public class OfficeKey : Interactable {
         EventTracker.hasKey = true;
         yield return StartCoroutine(showText("You picked up the office key"));
         p.unfreeze();
+        Destroy(gameObject);
     }
 }
