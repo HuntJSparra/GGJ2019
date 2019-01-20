@@ -7,8 +7,18 @@ public class Bookshelf : Interactable {
 
     override public IEnumerator run(Freeroam p) {
         p.freeze();
-        //check hooks
-        yield return StartCoroutine(bookshelf()/*hook identifier coroutine*/);
+        if(!EventTracker.movedBS){
+        	//move bookshelf
+        	EventTracker.movedBS = true;
+        	yield return StartCoroutine(showText("The bookshelf is back where it is supposed to be, but the books are all out of order"));
+        	yield return StartCoroutine(showText("Oh no"));
+        }
+        else if(!EventTracker.fixedBS){
+        	yield return StartCoroutine(bookshelf());
+        }
+        else{
+        	//display bookshelf picture
+        }
         p.unfreeze();
     }
 

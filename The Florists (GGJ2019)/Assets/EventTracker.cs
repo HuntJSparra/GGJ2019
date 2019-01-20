@@ -21,6 +21,7 @@ public class EventTracker : MonoBehaviour{
 	public static bool faucetOn;
 	public static bool foundWS;
 	public static bool usedDS;
+	public static bool fixedBS;
 
     void Awake() {
         hasKey = false;
@@ -41,5 +42,6 @@ public class EventTracker : MonoBehaviour{
         faucetOn = false;
         foundWS = false;
         usedDS = false;
+        fixedBS = false;
     }
 }
