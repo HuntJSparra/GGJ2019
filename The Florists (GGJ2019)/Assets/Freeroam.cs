@@ -25,10 +25,14 @@ public class Freeroam : MonoBehaviour {
         col = gameObject.GetComponent<Collider2D>();
 
         interactableMask = LayerMask.GetMask("Interactable");
+        StartCoroutine(startTimer());
     }
 
     void Update() {
         if (canMove) {
+            if(EventTracker.timesUp){
+                reset();
+            }
             // Movement
             if (Input.GetAxisRaw("Horizontal") == -1) {
                 direction = Vector2.left;
@@ -67,23 +71,30 @@ public class Freeroam : MonoBehaviour {
 
     public void freeze() {
         canMove = false;
+        gameObject.GetComponent<MCAnimBehavior>().canMove = false;
         //freeze timer
     }
 
     public void unfreeze() {
         canMove = true;
+        gameObject.GetComponent<MCAnimBehavior>().canMove = true;
         //unfreeze timer
     }
-
-
 
     private void reset(){
         rb.velocity = Vector2.zero;
         direction = Vector2.up;
         transform.position = initPos;
+        EventTracker.timesUp = false;
+        StartCoroutine(startTimer());
     }
 
-    private void finalReset(){
+    public IEnumerator startTimer(){
+        yield return new WaitForSecondsRealtime(120);
+        EventTracker.timesUp = true;
+    }
+
+    public void finalReset(){
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
     }
