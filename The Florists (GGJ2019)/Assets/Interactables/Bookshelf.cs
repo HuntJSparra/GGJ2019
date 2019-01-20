@@ -17,12 +17,8 @@ public class Bookshelf : Interactable {
         	//move bookshelf
         	EventTracker.movedBS = true;
             door.unlock();
-        	yield return StartCoroutine(showText("The bookshelf is back where it is supposed to be, but the books are all out of order"));
+        	yield return StartCoroutine(showText("The bookshelf is back where it is supposed to be, but the books are all out of order."));
         	yield return StartCoroutine(showText("Oh no"));
-
-        }
-        else {
-            yield return StartCoroutine(showText("The books are all out of order, let me fix that"));
         	yield return StartCoroutine(bookshelf());
         }
         p.unfreeze();
@@ -30,6 +26,7 @@ public class Bookshelf : Interactable {
 
     IEnumerator bookshelf(){
     	//Interact with Bookshelf
-    	yield return new WaitForSeconds(5);
-    }
+    	yield return StartCoroutine(showText("You put the books back in order."));
+        yield return StartCoroutine(showText("'Botany for Beginners', 'Chrysanthemum', 'Encyclopedia of Memory'..."));
+        yield return StartCoroutine(showText("'Hi I'm Daisy: A Royal Life', 'Hydrangea, how ya doing?', 'The Dandelion King.'"));
 }

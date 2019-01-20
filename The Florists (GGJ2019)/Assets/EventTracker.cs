@@ -19,6 +19,8 @@ public class EventTracker : MonoBehaviour{
 	public static bool fixedBS;
 	public static bool timesUp;
 	public static bool plantsWatered;
+	public static bool foundBday;
+	public static bool calendarSeen;
 
     void Start() {
         CRclosed = true;
