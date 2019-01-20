@@ -164,8 +164,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 957553179
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: aed950e4df5854edf95c5986710fe868, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -204,6 +204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e570fc99041c45c3bd71c78386a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: 0
 --- !u!1 &261879009
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,6 +298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e570fc99041c45c3bd71c78386a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: 0
 --- !u!61 &261879013
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -415,6 +417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e570fc99041c45c3bd71c78386a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: 0
 --- !u!1001 &572221823
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -599,6 +602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e570fc99041c45c3bd71c78386a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: 0
 --- !u!1 &810134561
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,6 +778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e570fc99041c45c3bd71c78386a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: 0
 --- !u!61 &878454355
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -858,6 +863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e570fc99041c45c3bd71c78386a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: 0
 --- !u!212 &916407470
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -932,6 +938,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e570fc99041c45c3bd71c78386a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: 0
 --- !u!1 &991246807
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,6 +1055,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canMove: 0
   movementSpeed: 4
+  direction: {x: 0, y: 0}
 --- !u!114 &991246813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1060,6 +1068,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e570fc99041c45c3bd71c78386a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: 0
 --- !u!212 &991246814
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1179,6 +1188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e570fc99041c45c3bd71c78386a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: 0
 --- !u!212 &1266294447
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1360,6 +1370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e570fc99041c45c3bd71c78386a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: 0
 --- !u!1 &1398651789
 GameObject:
   m_ObjectHideFlags: 0
@@ -1479,6 +1490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e570fc99041c45c3bd71c78386a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: 0
 --- !u!1 &1458254801
 GameObject:
   m_ObjectHideFlags: 0
@@ -1572,6 +1584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e570fc99041c45c3bd71c78386a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: 0
 --- !u!61 &1458254805
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1697,6 +1710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e570fc99041c45c3bd71c78386a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: 0
 --- !u!61 &1865595479
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1980,6 +1994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e570fc99041c45c3bd71c78386a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: 0
 --- !u!1 &2020938291
 GameObject:
   m_ObjectHideFlags: 0
@@ -2099,6 +2114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e570fc99041c45c3bd71c78386a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: 0
 --- !u!1 &2052422296
 GameObject:
   m_ObjectHideFlags: 0
@@ -2192,6 +2208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e570fc99041c45c3bd71c78386a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: 0
 --- !u!61 &2052422300
 BoxCollider2D:
   m_ObjectHideFlags: 0
