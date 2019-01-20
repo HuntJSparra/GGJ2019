@@ -27,7 +27,6 @@ public class EventTracker : MonoBehaviour{
         hasDS = false;
         hasJacket = false;
         CRclosed = true;
-        CRpropped = false;
         Oclosed = true;
         Vclosed = true;
         foundRope = false;

@@ -9,7 +9,6 @@ public class WateringSwitch : Interactable {
     	p.freeze();
     	if(!EventTracker.faucetOn){
     		yield return StartCoroutine(showText("This is labeled as the sprinkler system for another room, but the water lines are off"));
-    		EventTracker.foundWS = true;
     	}
     	else{
     		yield return StartCoroutine(showText("You hear water falling from beyond the current room"));
