@@ -15,6 +15,7 @@ public class Vent : Interactable {
         	//remove screwdriver from inventory and unscrew vent
         	yield return StartCoroutine(showText("With the screwdriver, you manage to open the vent"));
         	EventTracker.Vclosed = false;
+            Destroy(gameObject);
         }
         else{
         	//open pathway

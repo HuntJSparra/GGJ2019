@@ -16,6 +16,7 @@ public class CRDoor : Interactable {
         if(EventTracker.hasDS){
             yield return StartCoroutine(showText("You place the door stop in the door, keeping it open and letting the fog inside clear up"));
             EventTracker.usedDS = true;
+            Destroy(gameObject);
         }
 
        /*if(EventTracker.CRclosed){

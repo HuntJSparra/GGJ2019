@@ -10,9 +10,10 @@ public class BRDoor : Interactable {
         if(!EventTracker.movedBS){
         	yield return StartCoroutine(showText("The handle rattles, but the door remains closed."));
         }
-        else{
-        	//open path
-        }
         p.unfreeze();
+    }
+
+    public void delete(){
+        Destroy(gameObject);
     }
 }

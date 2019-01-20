@@ -5,6 +5,12 @@ using UnityEngine.UI;
 
 public class StairRope : Interactable {
 
+    private StepStool ss;
+
+    void Start(){
+        ss = FindObjectOfType<StepStool>();
+    }
+
     override public IEnumerator run(Freeroam p) {
         p.freeze();
         if(!EventTracker.hasSS){
@@ -15,6 +21,7 @@ public class StairRope : Interactable {
         else{
         	//place down stepstool
         	yield return StartCoroutine(showText("With the stepstool, you are able to reach the rope and pull down the stairs"));
+            Destroy(gameObject);
         	//rope & stepstool replaced with stairs
         }
         p.unfreeze();

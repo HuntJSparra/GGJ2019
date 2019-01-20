@@ -13,9 +13,7 @@ public class OfficeDoor : Interactable {
         else if(EventTracker.Oclosed & EventTracker.hasKey){
         	EventTracker.Oclosed = false;
         	yield return StartCoroutine(showText("The door became unlocked and swings open"));
-        }
-        else{
-        	//open path
+            Destroy(gameObject);
         }
         p.unfreeze();
     }
