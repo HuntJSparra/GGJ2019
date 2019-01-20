@@ -3,7 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class StairRope : Interactable {
+public class StairRope : Doors {
+
+    private StepStool ss;
+    private Collider2D col;
+
+    void Start(){
+        ss = FindObjectOfType<StepStool>();
+        col = gameObject.GetComponent<Collider2D>();
+        col.isTrigger = false;
+    }
 
     override public IEnumerator run(Freeroam p) {
         p.freeze();
@@ -15,7 +24,7 @@ public class StairRope : Interactable {
         else{
         	//place down stepstool
         	yield return StartCoroutine(showText("With the stepstool, you are able to reach the rope and pull down the stairs"));
-        	//rope & stepstool replaced with stairs
+        	col.isTrigger = true;
         }
         p.unfreeze();
     }

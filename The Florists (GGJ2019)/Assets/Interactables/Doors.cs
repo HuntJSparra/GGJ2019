@@ -1,13 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Doors : MonoBehaviour
-{
+abstract public class Doors : Interactable {
 	public Camera targetCam;
 	public Vector2 targetPos;
-
-
 
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -17,8 +15,9 @@ public class Doors : MonoBehaviour
     	//Teleport player to new location
 
     	//Change active camera to targetCamera
+    	Vector3 newPos = new Vector3(targetPos.x, targetPos.y, col.transform.position.z);
     	Camera.main.enabled = false;
     	targetCam.enabled = true;
-    	col.transform.position = targetPos;
+    	col.transform.position = newPos;
     }
 }
