@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class SpriteOrderer : MonoBehaviour
 {
+
+	public float offset = 0;
+
     SpriteRenderer sr;
 
     void Start() {
@@ -11,6 +14,6 @@ public class SpriteOrderer : MonoBehaviour
     }
 
     void Update() {
-        sr.sortingOrder = (int)(-transform.position.y*100);
+        sr.sortingOrder = (int)(-(transform.position.y+offset)*100);
     }
 }
