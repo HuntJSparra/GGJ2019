@@ -8,7 +8,7 @@ public class GHPlants : Interactable {
 	public float toMove;	
 	private bool watered;
 	public Vector2[] validPos;
-
+	public Sprite bloom;
 	private Rigidbody2D rb;
 
 
@@ -46,7 +46,11 @@ public class GHPlants : Interactable {
     	}
     }
 
-    void waterPlant(){
-    	watered = true;
+    void Update(){
+    	if (EventTracker.plantsWatered && !watered) {
+    		watered = true;
+    		gameObject.GetComponent<SpriteRenderer>().sprite = bloom;
+
+    	}
     }
 }

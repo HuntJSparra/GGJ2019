@@ -7,6 +7,7 @@ public class Puddle : MonoBehaviour
     public bool hasFlower;
     private BoxCollider2D coll;
     public bool water;
+    public bool displaySprite;
 
 
     void Start(){
@@ -15,6 +16,11 @@ public class Puddle : MonoBehaviour
     }
 
     void Update(){
+        if (!EventTracker.faucetOn && !displaySprite) {
+                gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            } else {
+                gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            }
     	if (water) {
     		coll.enabled = true;
     	} else {
