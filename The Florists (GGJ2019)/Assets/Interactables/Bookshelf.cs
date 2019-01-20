@@ -16,7 +16,7 @@ public class Bookshelf : Interactable {
         if(!EventTracker.movedBS){
         	//move bookshelf
         	EventTracker.movedBS = true;
-            door.delete();
+            door.unlock();
         	yield return StartCoroutine(showText("The bookshelf is back where it is supposed to be, but the books are all out of order"));
         	yield return StartCoroutine(showText("Oh no"));
 

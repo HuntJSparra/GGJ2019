@@ -13,8 +13,9 @@ public class StepStool : Interactable {
         else{
         	EventTracker.hasSS = true;
         	yield return StartCoroutine(showText("You pick up the step stool"));
-            Destroy(gameObject);
         }
         p.unfreeze();
+        if(EventTracker.hasSS)
+            Destroy(gameObject);
     }
 }

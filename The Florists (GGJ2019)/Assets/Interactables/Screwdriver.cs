@@ -13,9 +13,10 @@ public class Screwdriver : Interactable {
         else{
         	EventTracker.hasSD = true;
         	yield return StartCoroutine(showText("You pick up the screwdriver"));
-            Destroy(gameObject);
         }
         
         p.unfreeze();
+        if(EventTracker.hasSD)
+            Destroy(gameObject);
     }
 }

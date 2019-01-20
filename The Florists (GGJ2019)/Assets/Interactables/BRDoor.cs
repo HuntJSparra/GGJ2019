@@ -3,7 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BRDoor : Interactable {
+public class BRDoor : Doors {
+
+    private Collider2D col;
+
+    void Start(){
+        col = gameObject.GetComponent<Collider2D>();
+        col.isTrigger = false;
+    }
 
     override public IEnumerator run(Freeroam p) {
         p.freeze();
@@ -13,7 +20,7 @@ public class BRDoor : Interactable {
         p.unfreeze();
     }
 
-    public void delete(){
-        Destroy(gameObject);
+    public void unlock(){
+        col.isTrigger = true;
     }
 }

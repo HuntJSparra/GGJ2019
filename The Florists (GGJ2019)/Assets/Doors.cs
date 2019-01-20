@@ -1,13 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Doors : MonoBehaviour
-{
+abstract public class Doors : Interactable {
 	public Camera targetCam;
 	public Vector2 targetPos;
-
-
 
     void OnTriggerEnter2D(Collider2D col)
     {

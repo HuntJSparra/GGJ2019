@@ -8,8 +8,8 @@ public class DoorStop : Interactable {
     override public IEnumerator run(Freeroam p) {
         p.freeze();
         EventTracker.hasDS = true;
-        Destroy(gameObject);
         yield return StartCoroutine(showText("You picked up a door stop"));
         p.unfreeze();
+        Destroy(gameObject);
     }
 }
