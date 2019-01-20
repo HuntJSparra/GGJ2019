@@ -6,12 +6,14 @@ using UnityEngine.UI;
 abstract public class Interactable : MonoBehaviour{
 	public GameObject textBubble; 
     public GameObject imageBubble;
+    public AudioSource audi;
 
     public void receiveControl(Freeroam p){
     	StartCoroutine(run(p));
     }
 
     public abstract IEnumerator run(Freeroam p);
+
 
     public IEnumerator showText(string display){
     	textBubble.SetActive(true);                                             //Show text

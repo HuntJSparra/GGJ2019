@@ -26,6 +26,7 @@ public class Bookshelf : Interactable {
 
     IEnumerator bookshelf(){
     	//Interact with Bookshelf
+        //audi.Play();
     	yield return StartCoroutine(showText("You put the books back in order."));
         yield return StartCoroutine(showText("'Botany for Beginners', 'Chrysanthemum', 'Encyclopedia of Memory'..."));
         yield return StartCoroutine(showText("'Hi I'm Daisy: A Royal Life', 'Hydrangea, how ya doing?', 'The Dandelion King.'"));
