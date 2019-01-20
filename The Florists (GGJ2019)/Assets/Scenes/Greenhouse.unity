@@ -195,6 +195,7 @@ MonoBehaviour:
   textBubble: {fileID: 0}
   toMove: 0.3
   validPos: []
+  bloom: {fileID: 21300000, guid: e5d879513af87b145af1bd220d4e9422, type: 3}
 --- !u!212 &114080865
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -595,6 +596,7 @@ MonoBehaviour:
   textBubble: {fileID: 0}
   toMove: 0.3
   validPos: []
+  bloom: {fileID: 21300000, guid: 108a9788aa0180f47a61f11d98445502, type: 3}
 --- !u!212 &222283462
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1133,6 +1135,7 @@ MonoBehaviour:
   textBubble: {fileID: 0}
   toMove: 0.3
   validPos: []
+  bloom: {fileID: 21300000, guid: 41f5655fb7904764d8a22f9280c2c1d4, type: 3}
 --- !u!212 &684743390
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1458,6 +1461,7 @@ MonoBehaviour:
   textBubble: {fileID: 0}
   toMove: 0.3
   validPos: []
+  bloom: {fileID: 21300000, guid: 6f147c162d8671e43b627a874a3f7b14, type: 3}
 --- !u!212 &852316383
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2275,6 +2279,7 @@ MonoBehaviour:
   textBubble: {fileID: 0}
   toMove: 0.3
   validPos: []
+  bloom: {fileID: 21300000, guid: 108a9788aa0180f47a61f11d98445502, type: 3}
 --- !u!212 &1158793007
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3193,6 +3198,7 @@ MonoBehaviour:
   textBubble: {fileID: 0}
   toMove: 0.3
   validPos: []
+  bloom: {fileID: 21300000, guid: 38d961c06f3a3d1449295dfb5d1b206d, type: 3}
 --- !u!212 &1416470843
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3433,6 +3439,7 @@ MonoBehaviour:
   textBubble: {fileID: 0}
   toMove: 0.3
   validPos: []
+  bloom: {fileID: 21300000, guid: c302b7141c5eaaf46b29648d27beadf4, type: 3}
 --- !u!212 &1549948270
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4451,6 +4458,7 @@ MonoBehaviour:
   textBubble: {fileID: 0}
   toMove: 0.3
   validPos: []
+  bloom: {fileID: 21300000, guid: e5d879513af87b145af1bd220d4e9422, type: 3}
 --- !u!212 &2024253857
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4656,6 +4664,7 @@ MonoBehaviour:
   textBubble: {fileID: 0}
   toMove: 0.3
   validPos: []
+  bloom: {fileID: 21300000, guid: a1ecd540818b0624cb93391445d4d2ed, type: 3}
 --- !u!212 &2038746677
 SpriteRenderer:
   m_ObjectHideFlags: 0

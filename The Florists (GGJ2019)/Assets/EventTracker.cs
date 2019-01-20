@@ -18,6 +18,7 @@ public class EventTracker : MonoBehaviour{
 	public static bool usedDS;
 	public static bool fixedBS;
 	public static bool timesUp;
+	public static bool plantsWatered;
 
     void Start() {
         CRclosed = true;
