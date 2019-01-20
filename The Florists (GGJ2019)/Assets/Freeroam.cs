@@ -8,7 +8,7 @@ public class Freeroam : MonoBehaviour {
     public bool canMove;
     public float movementSpeed;
 
-    private Vector2 direction;
+    public Vector2 direction;
     private Rigidbody2D rb;
     private Collider2D col;
     private static Vector3 initPos;
@@ -72,6 +72,7 @@ public class Freeroam : MonoBehaviour {
     public void freeze() {
         canMove = false;
         gameObject.GetComponent<MCAnimBehavior>().canMove = false;
+        rb.velocity = Vector2.zero;
         //freeze timer
     }
 
