@@ -7,11 +7,11 @@ public class GHPlants : Interactable {
 
     override public IEnumerator run(Freeroam p) {
     	p.freeze();
-    	yield return StartCoroutine(pushPlant());
+    	yield return StartCoroutine(pushPlant(p));
     	p.unfreeze();
     }
 
-    IEnumerator pushPlant(){
+    IEnumerator pushPlant(Freeroam p){
     	yield return new WaitForSeconds(5);
     }
 }

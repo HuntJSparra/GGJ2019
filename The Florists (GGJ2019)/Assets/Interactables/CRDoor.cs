@@ -7,7 +7,11 @@ public class CRDoor : Interactable {
 
     override public IEnumerator run(Freeroam p) {
         p.freeze();
-        if(EventTracker.CRclosed){
+        if(!EventTracker.hasJacket){
+            yield return StartCoroutine(showText("There does not appear to be any way to open this door"));
+        }
+
+       /*if(EventTracker.CRclosed){
         	yield return StartCoroutine(showText("There does not appear to be any way to open this door"));
         }
         else if(!EventTracker.hasJacket){
@@ -17,8 +21,7 @@ public class CRDoor : Interactable {
             //open path
             if(EventTracker.hasDS){
                 //option to put down door stop
-                EventTracker.usedDS = true;
-                EventTracker.CRpropped = true;
+                EventTracker.usedDS = true;;
                 //clear's mist
                 yield return StartCoroutine(showText("Because the door isn't keeping it in anymore, the fog in the room clears up"));
             }
@@ -26,7 +29,7 @@ public class CRDoor : Interactable {
                 //fog covers screen
             }
     		
-    	}
+    	}*/
         p.unfreeze();
     }
 }
