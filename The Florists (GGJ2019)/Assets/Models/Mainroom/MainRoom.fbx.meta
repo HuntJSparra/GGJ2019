@@ -1,0 +1,234 @@
+fileFormatVersion: 2
+guid: 3e5e392aa280740a6a3dcd4d883d3469
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Breakroom Door
+    100002: Coldroom Door
+    100004: Coldroom Door (Seperate)
+    100006: Greenhouse Door
+    100008: Main Room Floor
+    100010: Main Room Floor.001
+    100012: //RootNode
+    100014: Office Door
+    100016: Plaq Breakroom
+    100018: 'Plaq Office '
+    100020: Trimming
+    400000: Breakroom Door
+    400002: Coldroom Door
+    400004: Coldroom Door (Seperate)
+    400006: Greenhouse Door
+    400008: Main Room Floor
+    400010: Main Room Floor.001
+    400012: //RootNode
+    400014: Office Door
+    400016: Plaq Breakroom
+    400018: 'Plaq Office '
+    400020: Trimming
+    2100000: Floor
+    2100002: Frame
+    2100004: Door
+    2100006: Stripes
+    2100008: Glass
+    2100010: Handle
+    2100012: Greenhouse Door
+    2100014: Freezer Frame
+    2100016: Trim
+    2100018: Trim Base
+    2100020: Name Table
+    2100022: Freezer Door
+    2100024: Freezer Door Outliner
+    2100026: Rubber
+    2100028: Wallpaper
+    2300000: Breakroom Door
+    2300002: Coldroom Door
+    2300004: Coldroom Door (Seperate)
+    2300006: Greenhouse Door
+    2300008: Main Room Floor
+    2300010: Main Room Floor.001
+    2300012: Office Door
+    2300014: Plaq Breakroom
+    2300016: 'Plaq Office '
+    2300018: Trimming
+    3300000: Breakroom Door
+    3300002: Coldroom Door
+    3300004: Coldroom Door (Seperate)
+    3300006: Greenhouse Door
+    3300008: Main Room Floor
+    3300010: Main Room Floor.001
+    3300012: Office Door
+    3300014: Plaq Breakroom
+    3300016: 'Plaq Office '
+    3300018: Trimming
+    4300000: Main Room Floor
+    4300002: Office Door
+    4300004: Greenhouse Door
+    4300006: Coldroom Door
+    4300008: Trimming
+    4300010: Breakroom Door
+    4300012: Plaq Breakroom
+    4300014: 'Plaq Office '
+    4300016: Coldroom Door (Seperate)
+    4300018: Main Room Floor.001
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door
+    second: {fileID: 2100000, guid: 761195939e9fb457cb36c924ee292f17, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor
+    second: {fileID: 2100000, guid: 14822606b47144534a412e4a2cc4f52a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Frame
+    second: {fileID: 2100000, guid: c37cc9bee2cd54152ab30dadc22744f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Freezer Door
+    second: {fileID: 2100000, guid: 7c70d45af4f854765a831727058b9a86, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Freezer Door Outliner
+    second: {fileID: 2100000, guid: 8f54166eeadaf4b5d8ebe3da5bc903eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Freezer Frame
+    second: {fileID: 2100000, guid: 833cdc8b7562648fc9c698944a0a6257, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 6eef207e565cf462198c60bb3501bc2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Greenhouse Door
+    second: {fileID: 2100000, guid: 2059107d8884b48b68229bfb8938c90a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Handle
+    second: {fileID: 2100000, guid: da58ebeb4520f4b1d9f69912e0e17a1f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Name Table
+    second: {fileID: 2100000, guid: 5f611c5261a8f40fc924fa5271930462, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rubber
+    second: {fileID: 2100000, guid: 6d15c7d795ecc456f82a71cfefc958f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stripes
+    second: {fileID: 2100000, guid: dbb66955bdf7447199c4008d8c829e35, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trim
+    second: {fileID: 2100000, guid: f9cb17de4df6a4967ad7e8a87702e7f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trim Base
+    second: {fileID: 2100000, guid: 84ec097e42503472ea9301173f979953, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wallpaper
+    second: {fileID: 2100000, guid: be35c7d3b0a584724b4c7ed0500fa27d, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.25
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
