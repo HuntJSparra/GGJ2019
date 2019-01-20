@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+	public Camera room1;
+	public Camera room2;
+	public Camera room3;
+
+
+
+    public void disableAll(){
+    	
+    	
     }
 }
