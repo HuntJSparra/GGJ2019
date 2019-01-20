@@ -11,7 +11,7 @@ public class CRLever : Interactable {
         yield return StartCoroutine(showText("You hear a door open in the shop"));
         p.unfreeze();
         yield return new WaitForSeconds(30);
-        if(!usedDS){
+        if(!EventTracker.usedDS){
         	EventTracker.CRclosed = true;
         }
     }

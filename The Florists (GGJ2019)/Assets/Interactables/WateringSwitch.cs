@@ -12,7 +12,7 @@ public class WateringSwitch : Interactable {
     		EventTracker.foundWS = true;
     	}
     	else{
-    		yield return StartCoroutine(showText(turnOnWater()));
+    		yield return StartCoroutine(turnOnWater());
     	}
     	p.unfreeze();
     }

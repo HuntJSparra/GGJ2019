@@ -7,7 +7,7 @@ public class GHPlants : Interactable {
 
     override public IEnumerator run(Freeroam p) {
     	p.freeze();
-    	yield return StartCoroutine(showText(pushPlant()));
+    	yield return StartCoroutine(pushPlant());
     	p.unfreeze();
     }
 
