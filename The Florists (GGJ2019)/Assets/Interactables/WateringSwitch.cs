@@ -36,6 +36,7 @@ public class WateringSwitch : Interactable {
         }
         if (allOn) {
             print("Puzzle complete!");
+            EventTracker.plantsWatered = true;
         }
     	yield return new WaitForSeconds(0);
     }
