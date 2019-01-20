@@ -27,6 +27,7 @@ public class Safe : Interactable {
         		yield return StartCoroutine(showText("Wait a second, oday is January 20th ! That’s what I was forgetting! Well, I was forgetting everything, I suppose. Wait, I need to go now! Before I forget again! I have my journal and Lily’s present; I should be good to go!"));
         		//stubbed, do ending crap
         	} else {
+        		audi.Play();
         		yield return StartCoroutine(showText("'I’ve been forgetting everything. This is bad. What will happen if I keep forgetting? I can’t lose my shop, or forget my family. I... I have to preserve it...'"));
         		p.finalReset();
         	}
