@@ -205,6 +205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e570fc99041c45c3bd71c78386a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: 0
 --- !u!68 &54777853
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -370,6 +371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e570fc99041c45c3bd71c78386a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: 0
 --- !u!61 &87531288
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -573,6 +575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e570fc99041c45c3bd71c78386a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: 0
 --- !u!1 &301900304
 GameObject:
   m_ObjectHideFlags: 0
@@ -666,6 +669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e570fc99041c45c3bd71c78386a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: 0
 --- !u!61 &301900308
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -785,6 +789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e570fc99041c45c3bd71c78386a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: 0
 --- !u!61 &643696031
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1164,6 +1169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canMove: 0
   movementSpeed: 4
+  direction: {x: 0, y: 0}
 --- !u!114 &1344596629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1176,6 +1182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e570fc99041c45c3bd71c78386a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: 0
 --- !u!212 &1344596630
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1330,6 +1337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e570fc99041c45c3bd71c78386a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: 0
 --- !u!1 &1887669359
 GameObject:
   m_ObjectHideFlags: 0
