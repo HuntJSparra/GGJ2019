@@ -16,5 +16,7 @@ public class Screwdriver : Interactable {
         }
         
         p.unfreeze();
+        if(EventTracker.hasSD)
+            Destroy(gameObject);
     }
 }

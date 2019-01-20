@@ -8,15 +8,17 @@ public class Freeroam : MonoBehaviour {
     public bool canMove;
     public float movementSpeed;
 
-    private Vector2 direction;
+    public Vector2 direction;
     private Rigidbody2D rb;
     private Collider2D col;
     private static Vector3 initPos;
+    private static Camera firstCam;
 
     private int interactableMask;
 
     void Start() {
         canMove = true;
+        firstCam = Camera.main;
 
         direction = Vector2.up;
         initPos = transform.position;
@@ -56,7 +58,7 @@ public class Freeroam : MonoBehaviour {
 
                 if (results[0].collider != null) {
                     results[0].collider.GetComponent<Interactable>().receiveControl(this);
-                    // print("found 1");
+                    print("found 1");
                 }
             }
         }
@@ -72,6 +74,7 @@ public class Freeroam : MonoBehaviour {
     public void freeze() {
         canMove = false;
         gameObject.GetComponent<MCAnimBehavior>().canMove = false;
+        rb.velocity = Vector2.zero;
         //freeze timer
     }
 
@@ -82,10 +85,12 @@ public class Freeroam : MonoBehaviour {
     }
 
     private void reset(){
+        Camera.main.enabled = false;
         rb.velocity = Vector2.zero;
         direction = Vector2.up;
         transform.position = initPos;
         EventTracker.timesUp = false;
+        firstCam.enabled = true;
         StartCoroutine(startTimer());
     }
 

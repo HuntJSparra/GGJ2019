@@ -5,9 +5,14 @@ using UnityEngine.UI;
 
 public class WateringSwitch : Interactable {
 
+
+    public Puddle[] puddles;
+    private bool allOn;
+    public bool debugWater;
+
     override public IEnumerator run(Freeroam p) {
     	p.freeze();
-    	if(!EventTracker.faucetOn){
+    	if(!EventTracker.faucetOn && !debugWater){
     		yield return StartCoroutine(showText("This is labeled as the sprinkler system for another room, but the water lines are off"));
     	}
     	else{
@@ -18,6 +23,20 @@ public class WateringSwitch : Interactable {
     }
 
     IEnumerator turnOnWater(){
-    	yield return new WaitForSeconds(5);
+        allOn = true;
+
+        foreach (Puddle p in puddles) {
+            p.water = true;
+            yield return new WaitForSeconds(0.1f);
+            if (!p.hasFlower) {
+                allOn = false; 
+                yield return new WaitForSeconds(0.1f);
+            }
+            p.water = false;
+        }
+        if (allOn) {
+            print("Puzzle complete!");
+        }
+    	yield return new WaitForSeconds(0);
     }
 }
