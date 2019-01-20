@@ -1,39 +1,39 @@
 fileFormatVersion: 2
-guid: 08017d0e61d904092a8631ac5dfff55d
+guid: a110b129c54fe40799a367a838df96af
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Office
-    100004: Trimming Office
+    100002: Breakroom
+    100004: Trimming Breakroom
     400000: //RootNode
-    400002: Office
-    400004: Trimming Office
-    2100000: Office Floor
-    2100002: Office Wall
+    400002: Breakroom
+    400004: Trimming Breakroom
+    2100000: Breakroom Walls
+    2100002: Breakroom Floor
     2100004: Trim
-    2300000: Office
-    2300002: Trimming Office
-    3300000: Office
-    3300002: Trimming Office
-    4300000: Office
-    4300002: Trimming Office
+    2300000: Breakroom
+    2300002: Trimming Breakroom
+    3300000: Breakroom
+    3300002: Trimming Breakroom
+    4300000: Breakroom
+    4300002: Trimming Breakroom
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Office Floor
-    second: {fileID: 2100000, guid: cce9b6908c8a1402db855b3936517d7e, type: 2}
+      name: Breakroom Floor
+    second: {fileID: 2100000, guid: 1bff622b06ea3409bac5b0591d4e9ba7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Office Wall
-    second: {fileID: 2100000, guid: f254c6e4b309643f1b8bd15a752a8d41, type: 2}
+      name: Breakroom Walls
+    second: {fileID: 2100000, guid: 0169544ddc5d34cfdbc20b05aa249454, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Trim
-    second: {fileID: 2100000, guid: 2cbfae6a1e0684c80bd6e6231ce3994c, type: 2}
+    second: {fileID: 2100000, guid: 9458eedc64f104831882b1d7c26a66f0, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
