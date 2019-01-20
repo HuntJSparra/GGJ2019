@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Freeroam : MonoBehaviour {
     public bool canMove;
@@ -9,6 +11,7 @@ public class Freeroam : MonoBehaviour {
     private Vector2 direction;
     private Rigidbody2D rb;
     private Collider2D col;
+    private static Vector3 initPos;
 
     private int interactableMask;
 
@@ -16,6 +19,7 @@ public class Freeroam : MonoBehaviour {
         canMove = true;
 
         direction = Vector2.up;
+        initPos = transform.position;
 
         rb = gameObject.GetComponent<Rigidbody2D>();
         col = gameObject.GetComponent<Collider2D>();
@@ -69,5 +73,18 @@ public class Freeroam : MonoBehaviour {
     public void unfreeze() {
         canMove = true;
         //unfreeze timer
+    }
+
+
+
+    private void reset(){
+        rb.velocity = Vector2.zero;
+        direction = Vector2.up;
+        transform.position = initPos;
+    }
+
+    private void finalReset(){
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
     }
 }
