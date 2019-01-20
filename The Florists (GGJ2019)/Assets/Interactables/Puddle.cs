@@ -2,17 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Puddle : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public bool hasFlower;
+    private BoxCollider2D coll;
+    public bool water;
+
+
+    void Start(){
+    	coll = gameObject.GetComponent<BoxCollider2D>();
+    	coll.enabled = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void Update(){
+    	if (water) {
+    		coll.enabled = true;
+    	} else {
+    		coll.enabled = false;
+            hasFlower = false;
+    	}
     }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+    	//if (EventTracker.faucetOn) {
+    	hasFlower = true;
+    	print("Flower in Puddle");
+    	//col.waterPlant();
+    	//}
+    }
+
 }

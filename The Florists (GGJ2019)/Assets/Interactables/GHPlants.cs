@@ -40,7 +40,13 @@ public class GHPlants : Interactable {
 
 	    		yield return new WaitForSeconds(0.01f);
 	    		rb.constraints = RigidbodyConstraints2D.FreezeAll;
+
+
 	    	}
     	}
+    }
+
+    void waterPlant(){
+    	watered = true;
     }
 }
