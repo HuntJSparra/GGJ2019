@@ -15,8 +15,9 @@ abstract public class Doors : Interactable {
     	//Teleport player to new location
 
     	//Change active camera to targetCamera
+    	Vector3 newPos = new Vector3(targetPos.x, targetPos.y, col.transform.position.z);
     	Camera.main.enabled = false;
     	targetCam.enabled = true;
-    	col.transform.position = targetPos;
+    	col.transform.position = newPos;
     }
 }

@@ -18,7 +18,7 @@ public class OfficeDoor : Doors {
             yield return StartCoroutine(showText("The door became unlocked and swings open"));
             dor.isTrigger = true;
         }
-        else{
+        else if(EventTracker.Oclosed == true){
         	yield return StartCoroutine(showText("The door appears to be locked"));
         }
         p.unfreeze();
