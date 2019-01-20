@@ -28,7 +28,7 @@ public class Safe : Interactable {
         		//stubbed, do ending crap
         	} else {
         		yield return StartCoroutine(showText("I’ve been forgetting everything. This is bad. What will happen if I keep forgetting? I can’t lose my shop, or forget my family. I should go. Maybe the doctor can help!"));
-        		yield return p.finalReset();
+        		p.finalReset();
         	}
         }
         
