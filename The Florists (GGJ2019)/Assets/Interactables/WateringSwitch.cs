@@ -12,7 +12,7 @@ public class WateringSwitch : Interactable {
 
     override public IEnumerator run(Freeroam p) {
     	p.freeze();
-    	if(!EventTracker.faucetOn || debugWater){
+    	if(!EventTracker.faucetOn && !debugWater){
     		yield return StartCoroutine(showText("This is labeled as the sprinkler system for another room, but the water lines are off"));
     	}
     	else{
