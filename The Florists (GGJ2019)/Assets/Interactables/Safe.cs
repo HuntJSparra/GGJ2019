@@ -8,7 +8,7 @@ public class Safe : Interactable {
     override public IEnumerator run(Freeroam p) {
         p.freeze();
         //check hooks
-        if (!EventTracker.plantsWatered || !EventTracker.usedDS || !EventTracker.foundBday || !EventTracker.movedBS) {
+        if (!EventTracker.plantsWatered || !EventTracker.usedDS || !EventTracker.foundBday || !EventTracker.movedBS || !EventTracker.hasJacket) {
         	yield return StartCoroutine(showText("The safe is locked. I need the code to open it.")/*or open and get journel*/);
         	yield return StartCoroutine(showText("There is a hint on a sticky note. \n 'Red Flowers, Encyclopedia of Memory, Sibling's Birthday."));
         } else {
@@ -27,7 +27,7 @@ public class Safe : Interactable {
         		yield return StartCoroutine(showText("Wait a second, oday is January 20th ! That’s what I was forgetting! Well, I was forgetting everything, I suppose. Wait, I need to go now! Before I forget again! I have my journal and Lily’s present; I should be good to go!"));
         		//stubbed, do ending crap
         	} else {
-        		audi.Play();
+        		//audi.Play();
         		yield return StartCoroutine(showText("'I’ve been forgetting everything. This is bad. What will happen if I keep forgetting? I can’t lose my shop, or forget my family. I... I have to preserve it...'"));
         		p.finalReset();
         	}
