@@ -26,18 +26,15 @@ public class WateringSwitch : Interactable {
         allOn = true;
 
         foreach (Puddle p in puddles) {
-            p.water = true;
-            yield return new WaitForSeconds(0.1f);
+            p.displaySprite = true;
             if (!p.hasFlower) {
-                allOn = false; 
-                yield return new WaitForSeconds(0.1f);
+                allOn = false;
             }
-            p.water = false;
         }
         if (allOn) {
             //print("Puzzle complete!");
             EventTracker.plantsWatered = true;
         }
-    	yield return new WaitForSeconds(0);
+    	yield return 0;
     }
 }
