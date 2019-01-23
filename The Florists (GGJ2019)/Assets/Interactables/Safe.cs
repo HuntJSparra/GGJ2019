@@ -12,7 +12,7 @@ public class Safe : Interactable {
         	yield return StartCoroutine(showText("The safe is locked. I need the code to open it.")/*or open and get journel*/);
         	yield return StartCoroutine(showText("There is a hint on a sticky note. \n 'Red Flowers, Encyclopedia of Memory, Sibling's Birthday."));
         } else {
-        	yield return StartCoroutine(showText("You enter the code, '83120', and the safe opens. \n There's a jounral inside."));
+        	yield return StartCoroutine(showText("You enter the code, '173120', and the safe opens. \n There's a jounral inside."));
         	yield return StartCoroutine(showText("'It looks familiar, it must be mine!'"));
         	yield return StartCoroutine(showText("January 1st \n I've been forgetting things a lot. If I remember to write in here then it will be fine, haha. I’ll just use this to save like in a video game!"));
         	yield return StartCoroutine(showText("January 5th \n I forgot a few orders today, and I’ve been forgetting about this journal. Lily wasn’t very happy when I forgot we had plans today. I think she realizes something is wrong."));

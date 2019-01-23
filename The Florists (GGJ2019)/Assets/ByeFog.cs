@@ -17,5 +17,8 @@ public class ByeFog : MonoBehaviour
         if(EventTracker.usedDS){
         	rend.enabled = false;
         }
+        else{
+            rend.enabled = true;
+        }
     }
 }

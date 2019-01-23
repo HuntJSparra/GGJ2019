@@ -25,7 +25,7 @@ public class Bookshelf : Interactable {
     }
 
     IEnumerator bookshelf(){
-    	//Interact with Bookshelf
+    	transform.parent.position = new Vector3(transform.parent.position.x, 7.9f, transform.parent.position.z);
         //audi.Play();
     	yield return StartCoroutine(showText("You put the books back in order."));
         yield return StartCoroutine(showText("'Botany for Beginners', 'Chrysanthemum', 'Encyclopedia of Memory'..."));
